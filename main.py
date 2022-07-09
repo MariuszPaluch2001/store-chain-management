@@ -14,12 +14,18 @@ colletions = production.list_collection_names()
 schema1 = json.load(open("schemas/producent_schema.json"))
 schema2 = json.load(open("schemas/product_schema.json"))
 schema3 = json.load(open("schemas/store_schema.json"))
+schema4 = json.load(open("schemas/product_delivery.json"))
+
 production.create_collection("producent")
 production.create_collection("product")
 production.create_collection("store")
+production.create_collection("product_delivery")
+
 production.command("collMod", "producent", validator = schema1)
 production.command("collMod", "product", validator = schema2)
 production.command("collMod", "store", validator = schema3)
+production.command("collMod", "product_delivery", validator = schema4)
+
 def push_sample_data():
     producent = [
         {
@@ -33,18 +39,17 @@ def push_sample_data():
             }
         }
     ]
-    pr_id = production.producent.insert_many(producent)
-    print(pr_id.inserted_ids)
+    producent_id = production.producent.insert_many(producent).inserted_ids[0]
     product = [
         {
             "Name" : "TEST",
             "Mass" : 100,
             "Mass_Unit" : "kg",
             "Description" : "DUPA",
-            "Producent_ID" : pr_id.inserted_ids[0]
+            "Producent_ID" : producent_id
         }
     ]
-    production.product.insert_many(product)
+    product_id = production.product.insert_many(product).inserted_ids[0]
 
     store = [
         {
@@ -65,5 +70,17 @@ def push_sample_data():
             }
         }
     ]
-    production.store.insert_many(store)
+    store_id = production.store.insert_many(store).inserted_ids[0]
+
+    product_delivery = [
+        {
+            "Amount" : 2,
+            "Delivery_Date" : datetime.now(),
+            "Expiration_Date" : datetime.now(),
+            "Product_id" : product_id,
+            "Store_id" : store_id
+        }
+    ]
+
+    product_delivery_id = production.product_delivery.insert_many(product_delivery).inserted_ids[0]
 push_sample_data()

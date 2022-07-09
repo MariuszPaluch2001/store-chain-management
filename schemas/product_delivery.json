@@ -3,9 +3,20 @@
         "bsonType" : "object",
         "title": "product_delivery",
         "required": [
-            "_id"
+            "_id",
+            "Amount",
+            "Delivery_Date",
+            "Expiration_Date",
+            "Product_id",
+            "Store_id"
         ],
         "properties": {
+            "_id": { "bsonType": "objectId" },
+            "Amount": {"bsonType": "int"},
+            "Delivery_Date" : { "bsonType": "date" },
+            "Expiration_Date" : { "bsonType": "date" },
+            "Product_id" : { "bsonType": "objectId" },
+            "Store_id" : { "bsonType": "objectId" }
         }
     }
 }
