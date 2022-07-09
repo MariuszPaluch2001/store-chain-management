@@ -1,0 +1,11 @@
+{
+    "$jsonSchema" : {
+        "bsonType" : "object",
+        "title": "product_delivery",
+        "required": [
+            "_id"
+        ],
+        "properties": {
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "$jsonSchema" : {
+        "bsonType" : "object",
+        "title": "store",
+        "required": [
+            "_id",
+            "Name",
+            "Description",
+            "Manager",
+            "Address"
+        ],
+        "properties": {
+            "_id": { "bsonType": "objectId" },
+            "Name": { "bsonType": "string" },
+            "Description": { "bsonType": "string" },
+            "Manager" : {
+                "bsonType": "object",
+                "required": ["First_Name","Name", "Employment_Date", "Telephone_Number"],
+                "properties":{
+                    "First_Name": { "bsonType": "string" },
+                    "Name" : { "bsonType": "string" },
+                    "Born_Date" : { "bsonType": "date" },
+                    "Employment_Date" : { "bsonType": "date" },
+                    "Telephone_Number" : { "bsonType": "string" },
+                    "Email" : {"bsonType" : "string"}
+                }
+            },
+            "Address": { 
+                "bsonType": "object",
+                "required": ["Voivodeship","City", "Street"],
+                "properties": {
+                    "Voivodeship" : {"bsonType": "string"},
+                    "City" : {"bsonType": "string"},
+                    "Street" : {"bsonType": "string"},
+                    "Building_Number" : {"bsonType": "string"}
+                }
+            }
+        }
+    }
+  }
