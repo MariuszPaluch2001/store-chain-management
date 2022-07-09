@@ -1,0 +1,22 @@
+{
+    "$jsonSchema" : {
+        "bsonType" : "object",
+        "title": "product",
+        "required": [
+            "_id",
+            "Name",
+            "Mass",
+            "Mass_Unit",
+            "Description",
+            "Producent_ID"
+        ],
+        "properties": {
+            "_id": { "bsonType": "objectId" },
+            "Name": { "bsonType": "string" },
+            "Mass": { "bsonType": "int" },
+            "Mass_Unit": { "bsonType": "string" },
+            "Description": { "bsonType": "string" },
+            "Producent_ID" : { "bsonType": "objectId" }
+        }
+    }
+}

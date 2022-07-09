@@ -19,7 +19,7 @@
                     "Voivodeship" : {"bsonType": "string"},
                     "City" : {"bsonType": "string"},
                     "Street" : {"bsonType": "string"},
-                    "Building_Bumber" : {"bsonType": "string"}
+                    "Building_Number" : {"bsonType": "string"}
                 }
             }
         }
