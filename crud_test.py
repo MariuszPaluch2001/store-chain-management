@@ -96,3 +96,17 @@ def test_delete():
     results = cr.query("collection", delete_rule)
 
     assert len(list(results)) == 0
+
+def test_update():
+    db = mongomock.MongoClient().db
+    cr = Crud(db)
+
+    cr.insert("collection", TEST_DOCUMENTS)
+
+    query = { "Attr1": 1 }
+    new_value = { "$set": { "Attr1": 10 } }
+    cr.update("collection", query, new_value)
+
+    results = cr.query("collection", {"Attr1" : 10})
+
+    assert len(list(results)) == 2

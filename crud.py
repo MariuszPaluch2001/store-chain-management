@@ -33,3 +33,7 @@ class Crud:
     def delete(self, collection_name, filter):
         collection = self.db.get_collection(collection_name)
         collection.delete_many(filter)
+
+    def update(self, collection_name, filter, new_values):
+        collection = self.db.get_collection(collection_name)
+        collection.update_many(filter, new_values)
