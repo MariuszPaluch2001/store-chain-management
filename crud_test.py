@@ -78,3 +78,21 @@ def test_advanced_query():
 
     assert len(list(results)) == 2
     for res in results: assert(res["Attr2"] > 2)
+
+def test_delete():
+    db = mongomock.MongoClient().db
+    cr = Crud(db)
+
+    cr.insert("collection", TEST_DOCUMENTS)
+    
+    delete_rule = {"Attr1" : 1}
+
+    cr.delete("collection", delete_rule)
+    
+    results = cr.query("collection", {})
+
+    assert len(list(results)) == 1
+
+    results = cr.query("collection", delete_rule)
+
+    assert len(list(results)) == 0
