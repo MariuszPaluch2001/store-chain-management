@@ -1,5 +1,5 @@
 import pytest
-from crud import Crud
+from src.crud import Crud
 import mongomock
 
 TEST_DOCUMENTS = [
