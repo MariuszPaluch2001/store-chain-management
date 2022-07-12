@@ -30,6 +30,9 @@ class Crud:
         collection = self.db.get_collection(collection_name)
         return collection.find(query)
 
+    def get_collection(self, collection_name):
+        return self.db.get_collection(collection_name)
+
     def delete(self, collection_name, filter):
         collection = self.db.get_collection(collection_name)
         collection.delete_many(filter)
