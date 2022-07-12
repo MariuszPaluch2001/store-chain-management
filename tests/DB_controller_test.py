@@ -23,7 +23,6 @@ def test_wrong_json_file_open():
     
 def test_json_export_file():
     db = mongomock.MongoClient().db
-    collection = db.collection
     DB_contr = DB_controller(db)
     test_docs = [
             {

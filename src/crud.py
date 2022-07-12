@@ -26,10 +26,6 @@ class Crud:
         id = collection.insert_many(documents).inserted_ids
         return id
 
-    def query(self, collection_name, query) -> Cursor:
-        collection = self.db.get_collection(collection_name)
-        return collection.find(query)
-
     def get_collection(self, collection_name):
         return self.db.get_collection(collection_name)
 

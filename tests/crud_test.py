@@ -61,7 +61,7 @@ def test_simple_query():
 
     simple_query = {"Attr1" : 1}
 
-    results = cr.query("collection", simple_query)
+    results = cr.get_collection("collection").find(simple_query)
 
     assert len(list(results)) == 2
     for res in results: assert(res["Attr1"] == 1)
@@ -74,7 +74,7 @@ def test_advanced_query():
 
     advanced_query = {"Attr2" : { "$gt": 2 }}
 
-    results = cr.query("collection", advanced_query)
+    results = cr.get_collection("collection").find(advanced_query)
 
     assert len(list(results)) == 2
     for res in results: assert(res["Attr2"] > 2)
@@ -89,11 +89,11 @@ def test_delete():
 
     cr.delete("collection", delete_rule)
     
-    results = cr.query("collection", {})
+    results = cr.get_collection("collection").find({})
 
     assert len(list(results)) == 1
 
-    results = cr.query("collection", delete_rule)
+    results = cr.get_collection("collection").find(delete_rule)
 
     assert len(list(results)) == 0
 
@@ -107,6 +107,6 @@ def test_update():
     new_value = { "$set": { "Attr1": 10 } }
     cr.update("collection", query, new_value)
 
-    results = cr.query("collection", {"Attr1" : 10})
+    results = cr.get_collection("collection").find({"Attr1" : 10})
 
     assert len(list(results)) == 2
