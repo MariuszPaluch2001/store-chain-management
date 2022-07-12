@@ -1,9 +1,9 @@
 from genericpath import isfile
 import pytest
-from src.crud import Crud
 import mongomock
-from src.DB_contoller import DB_controller
+from src.db.DB_contoller import DB_controller
 from copy import deepcopy
+
 def test_load_data_from_json():
     db = mongomock.MongoClient().db
     collection = db.collection

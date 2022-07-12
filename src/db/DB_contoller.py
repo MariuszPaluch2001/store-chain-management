@@ -1,4 +1,4 @@
-from src.crud import Crud
+from src.db.crud import Crud
 from pymongo.database import Database
 import json
 
