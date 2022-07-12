@@ -28,31 +28,31 @@ class Ui_MainWindow(object):
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setSizeConstraint(QLayout.SetDefaultConstraint)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.pushButton = QPushButton(self.verticalLayoutWidget)
-        self.pushButton.setObjectName(u"pushButton")
+        self.Add_Product_Button = QPushButton(self.verticalLayoutWidget)
+        self.Add_Product_Button.setObjectName(u"Add_Product_Button")
 
-        self.verticalLayout.addWidget(self.pushButton)
+        self.verticalLayout.addWidget(self.Add_Product_Button)
 
-        self.pushButton_2 = QPushButton(self.verticalLayoutWidget)
-        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.Add_Delivery_Button = QPushButton(self.verticalLayoutWidget)
+        self.Add_Delivery_Button.setObjectName(u"Add_Delivery_Button")
         sizePolicy = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton_2.sizePolicy().hasHeightForWidth())
-        self.pushButton_2.setSizePolicy(sizePolicy)
-        self.pushButton_2.setMinimumSize(QSize(158, 25))
+        sizePolicy.setHeightForWidth(self.Add_Delivery_Button.sizePolicy().hasHeightForWidth())
+        self.Add_Delivery_Button.setSizePolicy(sizePolicy)
+        self.Add_Delivery_Button.setMinimumSize(QSize(158, 25))
 
-        self.verticalLayout.addWidget(self.pushButton_2)
+        self.verticalLayout.addWidget(self.Add_Delivery_Button)
 
-        self.pushButton_3 = QPushButton(self.verticalLayoutWidget)
-        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.Info_Product_Button = QPushButton(self.verticalLayoutWidget)
+        self.Info_Product_Button.setObjectName(u"Info_Product_Button")
 
-        self.verticalLayout.addWidget(self.pushButton_3)
+        self.verticalLayout.addWidget(self.Info_Product_Button)
 
-        self.pushButton_4 = QPushButton(self.verticalLayoutWidget)
-        self.pushButton_4.setObjectName(u"pushButton_4")
+        self.Exit_Button = QPushButton(self.verticalLayoutWidget)
+        self.Exit_Button.setObjectName(u"Exit_Button")
 
-        self.verticalLayout.addWidget(self.pushButton_4)
+        self.verticalLayout.addWidget(self.Exit_Button)
 
         self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
@@ -70,10 +70,10 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Add new product", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Add new delivery", None))
-        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Info about products", None))
-        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
+        self.Add_Product_Button.setText(QCoreApplication.translate("MainWindow", u"Add new product", None))
+        self.Add_Delivery_Button.setText(QCoreApplication.translate("MainWindow", u"Add new delivery", None))
+        self.Info_Product_Button.setText(QCoreApplication.translate("MainWindow", u"Info about products", None))
+        self.Exit_Button.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
         self.label.setText("")
     # retranslateUi
 

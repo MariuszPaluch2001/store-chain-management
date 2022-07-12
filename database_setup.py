@@ -14,7 +14,6 @@ if __name__ == "__main__":
     client= MongoClient(connect_str)
 
     production = client.production
-    print(type(production))
     colletions = production.list_collection_names()
 
     local_dir = os.path.dirname(__file__)
