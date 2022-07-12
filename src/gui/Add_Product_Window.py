@@ -1,5 +1,5 @@
 from PySide2.QtWidgets import QMainWindow
-from src.gui.ui_add_product_window import Ui_Add_Product
+from src.gui.ui_gen_mods.ui_add_product_window import Ui_Add_Product
 from src.db.DB_contoller import DB_controller
 
 class Add_Product_Window(QMainWindow):

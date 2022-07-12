@@ -1,5 +1,5 @@
 from PySide2.QtWidgets import QMainWindow, QApplication
-from src.gui.ui_main_window import Ui_MainWindow
+from src.gui.ui_gen_mods.ui_main_window import Ui_MainWindow
 from src.gui.Add_Product_Window import Add_Product_Window
 
 class Main_Window(QMainWindow):
