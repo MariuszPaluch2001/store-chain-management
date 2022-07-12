@@ -5,7 +5,7 @@
         "required": [
             "_id",
             "Name",
-            "NIP",
+            "TIN",
             "Address"
         ],
         "properties": {

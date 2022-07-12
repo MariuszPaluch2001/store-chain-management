@@ -1,3 +1,5 @@
+from src.db.DB_contoller import DB_controller
+
 from dotenv import load_dotenv, find_dotenv
 from pymongo import MongoClient
 import json
@@ -26,3 +28,7 @@ if __name__ == "__main__":
         if json_schema["$jsonSchema"]["title"] not in colletions:
             collection_create(production, json_schema)
         f.close()
+
+    controller = DB_controller(production)
+
+    controller.load_json_to_database("sample_data/prod_sample_data.json", "producent")
