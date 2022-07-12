@@ -11,7 +11,7 @@
         "properties": {
             "_id": { "bsonType": "objectId" },
             "Name": { "bsonType": "string" },
-            "NIP": { "bsonType": "string" },
+            "TIN": { "bsonType": "string" },
             "Address": { 
                 "bsonType": "object",
                 "required": ["Voivodeship","City", "Street"],

@@ -1,0 +1,102 @@
+[
+    {
+        "Name": "Januszex",
+        "TIN": "1562806536",
+        "Address": { 
+            "Voivodeship" : "Świętokrzyskie",
+            "City" : "Kielce",
+            "Street" : "Mickiewicza",
+            "Building_Number" : "16"
+        }
+    },
+    {
+        "Name": "Januszpol",
+        "TIN": "5726613496",
+        "Address": { 
+            "Voivodeship" : "Mazowieckie",
+            "City" : "Warszawa",
+            "Street" : "Wawszyszewska",
+            "Building_Number" : "100"
+        }
+    },
+    {
+        "Name": "GreenPetrus",
+        "TIN": "3921840682",
+        "Address": { 
+            "Voivodeship" : "Mazowieckie",
+            "City" : "Radom",
+            "Street" : "Warszawska",
+            "Building_Number" : "69"
+        }
+    },
+    {
+        "Name": "Invicible",
+        "TIN": "1138246857",
+        "Address": { 
+            "Voivodeship" : "Małopolskie",
+            "City" : "Kraków",
+            "Street" : "Wawelska",
+            "Building_Number" : "123"
+        }
+    },
+    {
+        "Name": "Prata",
+        "TIN": "7988039177",
+        "Address": { 
+            "Voivodeship" : "Lubelskie",
+            "City" : "Lublin",
+            "Street" : "Jana Kochanowskiego",
+            "Building_Number" : "5"
+        }
+    },
+    {
+        "Name": "TuWstawNazwe",
+        "TIN": "7625812290",
+        "Address": { 
+            "Voivodeship" : "Wielkopolskie",
+            "City" : "Koło",
+            "Street" : "Wielkiego Tarnobrzega",
+            "Building_Number" : "15"
+        }
+    },
+    {
+        "Name": "Polskitrans",
+        "TIN": "7996601251",
+        "Address": { 
+            "Voivodeship" : "Podkarpackie",
+            "City" : "Leżajsk",
+            "Street" : "Mickiewicza",
+            "Building_Number" : "10"
+        }
+    },
+    {
+        "Name": "Tracz",
+        "TIN": "7994057300",
+        "Address": { 
+            "Voivodeship" : "Pomorskie",
+            "City" : "Gdańsk",
+            "Street" : "Sopocka",
+            "Building_Number" : "60"
+        }
+    },
+    {
+        "Name": "Pracz",
+        "TIN": "1174617180",
+        "Address": { 
+            "Voivodeship" : "Dolnośląskie",
+            "City" : "Wrocław",
+            "Street" : "Legnicka",
+            "Building_Number" : "68"
+        }
+    },
+    {
+        "Name": "PolskaFirma",
+        "TIN": "8117264049",
+        "Address": { 
+            "Voivodeship" : "Kujawsko-Pomorskie",
+            "City" : "Toruń",
+            "Street" : "Św. Rydzyka",
+            "Building_Number" : "420"
+        }
+    }
+]
