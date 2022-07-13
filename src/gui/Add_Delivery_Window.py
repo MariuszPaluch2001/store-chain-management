@@ -8,5 +8,27 @@ class Add_Delivery_Window(QMainWindow):
         self.ui = Ui_Add_Delivery_Window()
         self.ui.setupUi(self)
         self.db_controller = db_controller
+        self.__Product_Name_Load()
+        self.__Store_Name_Load()
+        self.ui.Submit_Button.clicked.connect(self.__Insert_Data)
+        
+    def __Product_Name_Load(self):
+        producents = self.db_controller.db.get_collection("product").find({}, {"Name":1, "_id":0})
+        producents_list = [producent["Name"] for producent in producents]
+        self.ui.Product_Name_Combo.addItems(producents_list)
+
+    def __Store_Name_Load(self):
+        producents = self.db_controller.db.get_collection("store").find({}, {"Name":1, "_id":0})
+        producents_list = [producent["Name"] for producent in producents]
+        self.ui.Store_Name_Combo.addItems(producents_list)
 
 
+    def __Insert_Data(self):
+
+        self.__clear_data()
+
+    
+    def __clear_data(self):
+        self.ui.Amount_Input.clear()
+        self.ui.Delivery_Date_Input.clear()
+        self.ui.Expiration_Date_Input.clear()

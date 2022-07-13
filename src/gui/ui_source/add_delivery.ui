@@ -27,7 +27,7 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="Amount_Input"/>
        </item>
        <item>
         <widget class="QLabel" name="label">
@@ -41,7 +41,7 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QLineEdit" name="lineEdit_2"/>
+        <widget class="QLineEdit" name="Delivery_Date_Input"/>
        </item>
        <item>
         <widget class="QLabel" name="label_2">
@@ -55,7 +55,7 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
-        <widget class="QLineEdit" name="lineEdit_3"/>
+        <widget class="QLineEdit" name="Expiration_Date_Input"/>
        </item>
        <item>
         <widget class="QLabel" name="label_3">
@@ -69,12 +69,12 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_4">
        <item>
-        <widget class="QLineEdit" name="lineEdit_4"/>
+        <widget class="QComboBox" name="Product_Name_Combo"/>
        </item>
        <item>
         <widget class="QLabel" name="label_4">
          <property name="text">
-          <string>   Product name    </string>
+          <string>   Product name</string>
          </property>
         </widget>
        </item>
@@ -83,7 +83,7 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_5">
        <item>
-        <widget class="QLineEdit" name="lineEdit_5"/>
+        <widget class="QComboBox" name="Store_Name_Combo"/>
        </item>
        <item>
         <widget class="QLabel" name="label_5">
@@ -96,7 +96,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="Submit_Button">
     <property name="geometry">
      <rect>
       <x>550</x>

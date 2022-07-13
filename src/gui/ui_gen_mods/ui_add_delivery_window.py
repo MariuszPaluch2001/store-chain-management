@@ -28,10 +28,10 @@ class Ui_Add_Delivery_Window(object):
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.lineEdit = QLineEdit(self.verticalLayoutWidget)
-        self.lineEdit.setObjectName(u"lineEdit")
+        self.Amount_Input = QLineEdit(self.verticalLayoutWidget)
+        self.Amount_Input.setObjectName(u"Amount_Input")
 
-        self.horizontalLayout.addWidget(self.lineEdit)
+        self.horizontalLayout.addWidget(self.Amount_Input)
 
         self.label = QLabel(self.verticalLayoutWidget)
         self.label.setObjectName(u"label")
@@ -43,10 +43,10 @@ class Ui_Add_Delivery_Window(object):
 
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.lineEdit_2 = QLineEdit(self.verticalLayoutWidget)
-        self.lineEdit_2.setObjectName(u"lineEdit_2")
+        self.Delivery_Date_Input = QLineEdit(self.verticalLayoutWidget)
+        self.Delivery_Date_Input.setObjectName(u"Delivery_Date_Input")
 
-        self.horizontalLayout_2.addWidget(self.lineEdit_2)
+        self.horizontalLayout_2.addWidget(self.Delivery_Date_Input)
 
         self.label_2 = QLabel(self.verticalLayoutWidget)
         self.label_2.setObjectName(u"label_2")
@@ -58,10 +58,10 @@ class Ui_Add_Delivery_Window(object):
 
         self.horizontalLayout_3 = QHBoxLayout()
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.lineEdit_3 = QLineEdit(self.verticalLayoutWidget)
-        self.lineEdit_3.setObjectName(u"lineEdit_3")
+        self.Expiration_Date_Input = QLineEdit(self.verticalLayoutWidget)
+        self.Expiration_Date_Input.setObjectName(u"Expiration_Date_Input")
 
-        self.horizontalLayout_3.addWidget(self.lineEdit_3)
+        self.horizontalLayout_3.addWidget(self.Expiration_Date_Input)
 
         self.label_3 = QLabel(self.verticalLayoutWidget)
         self.label_3.setObjectName(u"label_3")
@@ -73,10 +73,10 @@ class Ui_Add_Delivery_Window(object):
 
         self.horizontalLayout_4 = QHBoxLayout()
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.lineEdit_4 = QLineEdit(self.verticalLayoutWidget)
-        self.lineEdit_4.setObjectName(u"lineEdit_4")
+        self.Product_Name_Combo = QComboBox(self.verticalLayoutWidget)
+        self.Product_Name_Combo.setObjectName(u"Product_Name_Combo")
 
-        self.horizontalLayout_4.addWidget(self.lineEdit_4)
+        self.horizontalLayout_4.addWidget(self.Product_Name_Combo)
 
         self.label_4 = QLabel(self.verticalLayoutWidget)
         self.label_4.setObjectName(u"label_4")
@@ -88,10 +88,10 @@ class Ui_Add_Delivery_Window(object):
 
         self.horizontalLayout_5 = QHBoxLayout()
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
-        self.lineEdit_5 = QLineEdit(self.verticalLayoutWidget)
-        self.lineEdit_5.setObjectName(u"lineEdit_5")
+        self.Store_Name_Combo = QComboBox(self.verticalLayoutWidget)
+        self.Store_Name_Combo.setObjectName(u"Store_Name_Combo")
 
-        self.horizontalLayout_5.addWidget(self.lineEdit_5)
+        self.horizontalLayout_5.addWidget(self.Store_Name_Combo)
 
         self.label_5 = QLabel(self.verticalLayoutWidget)
         self.label_5.setObjectName(u"label_5")
@@ -101,9 +101,9 @@ class Ui_Add_Delivery_Window(object):
 
         self.verticalLayout.addLayout(self.horizontalLayout_5)
 
-        self.pushButton = QPushButton(self.centralwidget)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(550, 500, 151, 41))
+        self.Submit_Button = QPushButton(self.centralwidget)
+        self.Submit_Button.setObjectName(u"Submit_Button")
+        self.Submit_Button.setGeometry(QRect(550, 500, 151, 41))
         Add_Delivery_Window.setCentralWidget(self.centralwidget)
         self.statusbar = QStatusBar(Add_Delivery_Window)
         self.statusbar.setObjectName(u"statusbar")
@@ -119,8 +119,8 @@ class Ui_Add_Delivery_Window(object):
         self.label.setText(QCoreApplication.translate("Add_Delivery_Window", u"   Amount                ", None))
         self.label_2.setText(QCoreApplication.translate("Add_Delivery_Window", u"   Delivery Date     ", None))
         self.label_3.setText(QCoreApplication.translate("Add_Delivery_Window", u"   Expiration Date ", None))
-        self.label_4.setText(QCoreApplication.translate("Add_Delivery_Window", u"   Product name    ", None))
+        self.label_4.setText(QCoreApplication.translate("Add_Delivery_Window", u"   Product name", None))
         self.label_5.setText(QCoreApplication.translate("Add_Delivery_Window", u"   Store name         ", None))
-        self.pushButton.setText(QCoreApplication.translate("Add_Delivery_Window", u"Submit", None))
+        self.Submit_Button.setText(QCoreApplication.translate("Add_Delivery_Window", u"Submit", None))
     # retranslateUi
 
