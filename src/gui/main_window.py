@@ -1,6 +1,7 @@
 from PySide2.QtWidgets import QMainWindow, QApplication
 from src.gui.ui_gen_mods.ui_main_window import Ui_MainWindow
 from src.gui.Add_Product_Window import Add_Product_Window
+from src.gui.Add_Delivery_Window import Add_Delivery_Window
 
 class Main_Window(QMainWindow):
     def __init__(self, db_controller, parent = None) -> None:
@@ -15,9 +16,11 @@ class Main_Window(QMainWindow):
     def __add_product_window(self):
         window = Add_Product_Window(self.db_controller, self)
         window.show()
+        
 
     def __add_delivery_window(self):
-        print("Add delivery")
+        window = Add_Delivery_Window(self.db_controller, self)
+        window.show()
     
     def __info_prouct_window(self):
         print("Info product")
