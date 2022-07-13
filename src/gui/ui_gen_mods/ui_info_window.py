@@ -20,12 +20,24 @@ class Ui_Info_Window(object):
         Info_Window.resize(800, 600)
         self.centralwidget = QWidget(Info_Window)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.tableView = QTableView(self.centralwidget)
-        self.tableView.setObjectName(u"tableView")
-        self.tableView.setGeometry(QRect(60, 90, 361, 461))
-        self.pushButton = QPushButton(self.centralwidget)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(560, 290, 121, 41))
+        self.Refresh_Button = QPushButton(self.centralwidget)
+        self.Refresh_Button.setObjectName(u"Refresh_Button")
+        self.Refresh_Button.setGeometry(QRect(560, 290, 121, 41))
+        self.Query_Table = QTableWidget(self.centralwidget)
+        if (self.Query_Table.columnCount() < 5):
+            self.Query_Table.setColumnCount(5)
+        __qtablewidgetitem = QTableWidgetItem()
+        self.Query_Table.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        self.Query_Table.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        __qtablewidgetitem2 = QTableWidgetItem()
+        self.Query_Table.setHorizontalHeaderItem(2, __qtablewidgetitem2)
+        __qtablewidgetitem3 = QTableWidgetItem()
+        self.Query_Table.setHorizontalHeaderItem(3, __qtablewidgetitem3)
+        __qtablewidgetitem4 = QTableWidgetItem()
+        self.Query_Table.setHorizontalHeaderItem(4, __qtablewidgetitem4)
+        self.Query_Table.setObjectName(u"Query_Table")
+        self.Query_Table.setGeometry(QRect(40, 80, 501, 471))
         Info_Window.setCentralWidget(self.centralwidget)
         self.statusbar = QStatusBar(Info_Window)
         self.statusbar.setObjectName(u"statusbar")
@@ -38,6 +50,16 @@ class Ui_Info_Window(object):
 
     def retranslateUi(self, Info_Window):
         Info_Window.setWindowTitle(QCoreApplication.translate("Info_Window", u"MainWindow", None))
-        self.pushButton.setText(QCoreApplication.translate("Info_Window", u"Refresh", None))
+        self.Refresh_Button.setText(QCoreApplication.translate("Info_Window", u"Refresh", None))
+        ___qtablewidgetitem = self.Query_Table.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("Info_Window", u"Product Name", None));
+        ___qtablewidgetitem1 = self.Query_Table.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("Info_Window", u"Amount", None));
+        ___qtablewidgetitem2 = self.Query_Table.horizontalHeaderItem(2)
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("Info_Window", u"Delivery Date", None));
+        ___qtablewidgetitem3 = self.Query_Table.horizontalHeaderItem(3)
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("Info_Window", u"Exp. Date", None));
+        ___qtablewidgetitem4 = self.Query_Table.horizontalHeaderItem(4)
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("Info_Window", u"Store Name", None));
     # retranslateUi
 

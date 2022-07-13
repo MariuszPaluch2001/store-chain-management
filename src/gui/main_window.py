@@ -2,6 +2,7 @@ from PySide2.QtWidgets import QMainWindow, QApplication
 from src.gui.ui_gen_mods.ui_main_window import Ui_MainWindow
 from src.gui.Add_Product_Window import Add_Product_Window
 from src.gui.Add_Delivery_Window import Add_Delivery_Window
+from src.gui.Info_Window import Info_Window
 
 class Main_Window(QMainWindow):
     def __init__(self, db_controller, parent = None) -> None:
@@ -23,8 +24,9 @@ class Main_Window(QMainWindow):
         window.show()
     
     def __info_prouct_window(self):
-        print("Info product")
-
+        window = Info_Window(self.db_controller, self)
+        window.show()
+        
     def __set_buttons(self):
         self.ui.Exit_Button.clicked.connect(exit)
         self.ui.Add_Product_Button.clicked.connect(self.__add_product_window)

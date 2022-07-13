@@ -14,17 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTableView" name="tableView">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>90</y>
-      <width>361</width>
-      <height>461</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="Refresh_Button">
     <property name="geometry">
      <rect>
       <x>560</x>
@@ -36,6 +26,44 @@
     <property name="text">
      <string>Refresh</string>
     </property>
+   </widget>
+   <widget class="QTableWidget" name="Query_Table">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>501</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>Product Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Amount</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Delivery Date</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Exp. Date</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Store Name</string>
+     </property>
+    </column>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
