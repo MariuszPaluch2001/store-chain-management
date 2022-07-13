@@ -69,7 +69,11 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_4">
        <item>
-        <widget class="QComboBox" name="Product_Name_Combo"/>
+        <widget class="QComboBox" name="Product_Name_Combo">
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QLabel" name="label_4">

@@ -1,0 +1,75 @@
+[
+    {
+            "Name": "Sklep 1",
+            "Description": "...",
+            "Manager" : {
+
+                    "First_Name": "Adam",
+                    "Name" : "Nawałka",
+                    "Telephone_Number" : "000666000",
+                    "Email" : "acocieto@gmail.com"
+            },
+            "Address": { 
+
+                    "Voivodeship" : "Świętokrzyskie",
+                    "City" : "Kielce",
+                    "Street" : "Wacława",
+                    "Building_Number" : "1"
+            }
+    },
+    {
+            "Name": "Sklep 2",
+            "Description": "...",
+            "Manager" : {
+
+                    "First_Name": "Adam",
+                    "Name" : "Nawałka",
+                    "Telephone_Number" : "000666000",
+                    "Email" : "acocieto@gmail.com"
+            },
+            "Address": { 
+
+                    "Voivodeship" : "Świętokrzyskie",
+                    "City" : "Kielce",
+                    "Street" : "Wacława",
+                    "Building_Number" : "1"
+            }
+    },
+    {
+        "Name": "Sklep 3",
+        "Description": "...",
+        "Manager" : {
+
+                "First_Name": "Adam",
+                "Name" : "Nawałka",
+                "Telephone_Number" : "000666000",
+                "Email" : "acocieto@gmail.com"
+        },
+        "Address": { 
+
+                "Voivodeship" : "Świętokrzyskie",
+                "City" : "Kielce",
+                "Street" : "Wacława",
+                "Building_Number" : "1"
+        }
+    },
+    {
+        "Name": "Sklep 4",
+        "Description": "...",
+        "Manager" : {
+
+                "First_Name": "Adam",
+                "Name" : "Nawałka",
+                "Telephone_Number" : "000666000",
+                "Email" : "acocieto@gmail.com"
+        },
+        "Address": { 
+
+                "Voivodeship" : "Świętokrzyskie",
+                "City" : "Kielce",
+                "Street" : "Wacława",
+                "Building_Number" : "1"
+        }
+    }
+
+]

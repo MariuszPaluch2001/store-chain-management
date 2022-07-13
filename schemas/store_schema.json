@@ -15,12 +15,10 @@
             "Description": { "bsonType": "string" },
             "Manager" : {
                 "bsonType": "object",
-                "required": ["First_Name","Name", "Employment_Date", "Telephone_Number"],
+                "required": ["First_Name","Name", "Telephone_Number"],
                 "properties":{
                     "First_Name": { "bsonType": "string" },
                     "Name" : { "bsonType": "string" },
-                    "Born_Date" : { "bsonType": "date" },
-                    "Employment_Date" : { "bsonType": "date" },
                     "Telephone_Number" : { "bsonType": "string" },
                     "Email" : {"bsonType" : "string"}
                 }

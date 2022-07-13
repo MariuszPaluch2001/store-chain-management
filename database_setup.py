@@ -32,3 +32,4 @@ if __name__ == "__main__":
     controller = DB_controller(production)
 
     controller.load_json_to_database("sample_data/prod_sample_data.json", "producent")
+    controller.load_json_to_database("sample_data/store_sample_data.json", "store")
